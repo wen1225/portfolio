@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +37,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(./fonts/League_Spartan/LeagueSpartan-Bold.ttf);
 }

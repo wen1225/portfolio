@@ -1,0 +1,9 @@
+6/19/23
+Issue: <StyledCircle_Bottom> does not stick to the bottom left corner if the screen height is reduced.
+Objective: It should always stick to the bottom left corner regardless of screen height
+Status: Pending
+
+6/19/23
+Issue: Resume cannot be rendered through <iframe> even though the relative path was correct.
+Objective: Figure out a way to render the resume.pdf on the Resume page
+Status: Pending

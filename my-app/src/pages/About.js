@@ -2,6 +2,6 @@ import React from "react";
 
 export default function About() {
     return (
-        <p>This is the About page</p>
+        <p>This page is currently under maintenance.</p>
     )
 }
