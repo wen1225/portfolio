@@ -2,6 +2,80 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 
+export default function Home() {
+
+    const navigate = useNavigate();
+    const handleClick = (title) => {
+        // Navigate to corresponding page based on the title
+        switch (title) {
+            case 'projects':
+                navigate('/projects');
+                break;
+            case 'resume':
+                navigate('/resume');
+                break;
+            case 'photography':
+                navigate('/photography');
+                break;
+            case 'about':
+                navigate('/about');
+                break;
+            default:
+                break;
+        }
+
+    }
+
+    return (
+        <StyledContainer>
+            <StyledCircleTop />
+            <StyledEmail href="mailto:kenho12251999@gmail.com">kenho12251999@gmail.com</StyledEmail>
+            <StyledContent>
+                <StyledName>WEN YAO HO</StyledName>
+                <StyledTitle>
+                    SOFTWARE DEVELOPER
+                    <PushPinEmoji>📍</PushPinEmoji>
+                </StyledTitle>
+                <StyledList>
+                    <StyledListItem>
+                        <StyledText onClick={() => handleClick('projects')}>PROJECTS</StyledText>
+                        <StyledDescription>Find my most recent programming content here</StyledDescription>
+                    </StyledListItem>
+                    <StyledListItem>
+                        <StyledText onClick={() => handleClick('resume')}>RESUME & CV</StyledText>
+                        <StyledDescription>My most recent resume and CV can be found here</StyledDescription>
+                    </StyledListItem>
+                    <StyledListItem>
+                        <StyledText onClick={() => handleClick('photography')}>PHOTOGRAPHY</StyledText>
+                        <StyledDescription>I love taking photos. I hope you'll be visually pleased!</StyledDescription>
+                    </StyledListItem>
+                    <StyledListItem>
+                        <StyledText onClick={() => handleClick('about')}>ABOUT ME</StyledText>
+                        <StyledDescription>Getting a bit personal aren't we</StyledDescription>
+                    </StyledListItem>
+                </StyledList>
+            </StyledContent>
+            <StyledCircleBottom />
+        </StyledContainer>
+    )
+}
+
+function PushPinEmoji() {
+
+    const ResponsiveEmoji = styled.div`
+        fontSize: 20px;
+        marginTop: 10px;
+
+        @media (max-width: 1000px) {
+            fontSize: 10px;
+        }
+    `;
+
+    return (
+        <ResponsiveEmoji>📍 San Jose, CA</ResponsiveEmoji>
+    )
+}
+
 const StyledEmail = styled.a`
     color: black;
     text-decoration: none;
@@ -140,76 +214,3 @@ const StyledCircleBottom = styled.div`
   }
 `;
 
-function PushPinEmoji() {
-
-    const ResponsiveEmoji = styled.div`
-        fontSize: 20px;
-        marginTop: 10px;
-
-        @media (max-width: 1000px) {
-            fontSize: 10px;
-        }
-    `;
-
-    return (
-        <ResponsiveEmoji>📍 San Jose, CA</ResponsiveEmoji>
-    )
-}
-
-export default function Home() {
-
-    const navigate = useNavigate();
-    const handleClick = (title) => {
-        // Navigate to corresponding page based on the title
-        switch (title) {
-            case 'projects':
-                navigate('/projects');
-                break;
-            case 'resume':
-                navigate('/resume');
-                break;
-            case 'photography':
-                navigate('/photography');
-                break;
-            case 'about':
-                navigate('/about');
-                break;
-            default:
-                break;
-        }
-
-    }
-
-    return (
-        <StyledContainer>
-            <StyledCircleTop />
-            <StyledEmail href="mailto:kenho12251999@gmail.com">kenho12251999@gmail.com</StyledEmail>
-            <StyledContent>
-                <StyledName>WEN YAO HO</StyledName>
-                <StyledTitle>
-                    SOFTWARE DEVELOPER
-                    <PushPinEmoji>📍</PushPinEmoji>
-                </StyledTitle>
-                <StyledList>
-                    <StyledListItem>
-                        <StyledText onClick={() => handleClick('projects')}>PROJECTS</StyledText>
-                        <StyledDescription>Find my most recent programming content here</StyledDescription>
-                    </StyledListItem>
-                    <StyledListItem>
-                        <StyledText onClick={() => handleClick('resume')}>RESUME & CV</StyledText>
-                        <StyledDescription>My most recent resume and CV can be found here</StyledDescription>
-                    </StyledListItem>
-                    <StyledListItem>
-                        <StyledText onClick={() => handleClick('photography')}>PHOTOGRAPHY</StyledText>
-                        <StyledDescription>I love taking photos. I hope you'll be visually pleased!</StyledDescription>
-                    </StyledListItem>
-                    <StyledListItem>
-                        <StyledText onClick={() => handleClick('about')}>ABOUT ME</StyledText>
-                        <StyledDescription>Getting a bit personal aren't we</StyledDescription>
-                    </StyledListItem>
-                </StyledList>
-            </StyledContent>
-            <StyledCircleBottom />
-        </StyledContainer>
-    )
-}
