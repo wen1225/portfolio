@@ -7,3 +7,12 @@ Status: Pending
 Issue: Resume cannot be rendered through <iframe> even though the relative path was correct.
 Objective: Figure out a way to render the resume.pdf on the Resume page
 Status: Pending
+
+6/19/23
+Issue: Circles are blocking my contact info when viewed through a mobile screen.
+Objective: Fine tune media queries to handle mobile-first responsiveness
+Status: Pending
+
+6/19/23
+Issue: Trouble uploading seperate projects to /projects page and others (/photography, /about)
+Status: Pending
