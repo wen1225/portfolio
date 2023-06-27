@@ -28,7 +28,6 @@ export default function Home() {
 
     return (
         <StyledContainer>
-            <StyledCircleTop />
             <StyledEmail href="mailto:kenho12251999@gmail.com">kenho12251999@gmail.com</StyledEmail>
             <StyledContent>
                 <StyledName>WEN YAO HO</StyledName>
@@ -55,6 +54,7 @@ export default function Home() {
                     </StyledListItem>
                 </StyledList>
             </StyledContent>
+            <StyledCircleTop />
             <StyledCircleBottom />
         </StyledContainer>
     )
@@ -164,53 +164,37 @@ const StyledCircleTop = styled.div`
   position: absolute;
   top: 0px;
   right: 0px;
-  animation: hoverAnimation 5s infinite alternate;
 
   @media (max-width: 800px) {
     width: 200px;
     height: 200px;
   }
 
-  @keyframes hoverAnimation {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-      transform: translate(50px, 50px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
+  @media (max-width: 400px) {
+    width: 80px;
+    height: 70px;
   }
 
 `;
 
 //This is the bottom left circle
 const StyledCircleBottom = styled.div`
-  width: 350px;
-  height: 200px;
-  border-radius: 0 100% 0 0;
-  background-color: #f9cc01;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  animation: expandContract 4s infinite alternate ease-in-out;
+width: 350px;
+height: 200px;
+border-radius: 0 100% 0 0;
+background-color: #f9cc01;
+position: absolute;
+bottom: 0px;
+left: 0px;
 
-  @media (max-width: 1000px) {
-    width: 120px;
-    height: 100px;
-  }
+@media (max-width: 1000px) {
+  width: 120px;
+  height: 100px;
+}
 
-  @keyframes expandContract {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(2);
-    }
-  }
+@media (max-width: 400px) {
+  width: 60px;
+  height: 50px;
+}
 `;
 
