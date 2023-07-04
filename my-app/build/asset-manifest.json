@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.cea92b02.css",
-    "main.js": "/static/js/main.8597ed2c.js",
+    "main.js": "/static/js/main.45ff64a5.js",
+    "static/media/resume_and_cv.pdf": "/static/media/resume_and_cv.f855c5f7de1cb20000ed.pdf",
     "static/media/LeagueSpartan-Bold.ttf": "/static/media/LeagueSpartan-Bold.c311dbd01e80ebe50942.ttf",
     "index.html": "/index.html",
     "main.cea92b02.css.map": "/static/css/main.cea92b02.css.map",
-    "main.8597ed2c.js.map": "/static/js/main.8597ed2c.js.map"
+    "main.45ff64a5.js.map": "/static/js/main.45ff64a5.js.map"
   },
   "entrypoints": [
     "static/css/main.cea92b02.css",
-    "static/js/main.8597ed2c.js"
+    "static/js/main.45ff64a5.js"
   ]
 }
