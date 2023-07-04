@@ -1,18 +1,20 @@
-6/19/23
-Issue: <StyledCircle_Bottom> does not stick to the bottom left corner if the screen height is reduced.
-Objective: It should always stick to the bottom left corner regardless of screen height
-Status: Pending
+=====================
+Unopened Tickets
+=====================
+7/3/23
+Issue: Resume needs to be constantly updated. How do I create a feature for self upload/update through the live site?
 
-6/19/23
-Issue: Resume cannot be rendered through <iframe> even though the relative path was correct.
-Objective: Figure out a way to render the resume.pdf on the Resume page
-Status: Pending
 
-6/19/23
-Issue: Circles are blocking my contact info when viewed through a mobile screen.
-Objective: Fine tune media queries to handle mobile-first responsiveness
-Status: Pending
-
+=====================
+Pending Tickets
+=====================
 6/19/23
 Issue: Trouble uploading seperate projects to /projects page and others (/photography, /about)
-Status: Pending
+
+
+=====================
+Completed Tickets
+=====================
+6/19/23 - 6/25/23
+Issue: Resume cannot be rendered through <iframe> even though the relative path was correct
+Solution: It was actually caused by INCORRECT path. My assumption was wrong
