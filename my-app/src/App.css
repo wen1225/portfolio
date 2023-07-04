@@ -47,3 +47,8 @@
   font-family: 'LeagueSpartan';
   src: url(./fonts/League_Spartan/LeagueSpartan-Bold.ttf);
 }
+
+@font-face {
+  font-family: 'AnonymousPro';
+  src: url(./fonts/Anonymous_Pro/AnonymousPro-Bold.ttf);
+}

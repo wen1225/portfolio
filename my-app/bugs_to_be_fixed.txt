@@ -8,6 +8,12 @@ Issue: Resume needs to be constantly updated. How do I create a feature for self
 =====================
 Pending Tickets
 =====================
+7/3/23
+Issue: Refresh doesn't work on /resume page. Redirection fails.
+
+7/3/23
+Issue: Cannot view CV in mobile view in /resume page.
+
 6/19/23
 Issue: Trouble uploading seperate projects to /projects page and others (/photography, /about)
 

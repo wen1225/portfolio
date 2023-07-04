@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 
+
 export default function Home() {
 
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ export default function Home() {
 
     return (
         <StyledContainer>
-            <StyledEmail href="mailto:kenho12251999@gmail.com">kenho12251999@gmail.com</StyledEmail>
+            <StyledEmail href="mailto:wyho1225@gmail.com">wyho1225@gmail.com</StyledEmail>
             <StyledContent>
                 <StyledName>WEN YAO HO</StyledName>
                 <StyledTitle>
@@ -76,7 +77,7 @@ function PushPinEmoji() {
     )
 }
 
-const StyledEmail = styled.a`
+export const StyledEmail = styled.a`
     color: black;
     text-decoration: none;
     font-family: 'LeagueSpartan';
@@ -197,4 +198,3 @@ left: 0px;
   height: 50px;
 }
 `;
-
