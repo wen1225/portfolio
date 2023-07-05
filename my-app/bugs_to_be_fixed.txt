@@ -11,6 +11,10 @@ Pending Tickets
 
 7/3/23
 Issue: Cannot view CV in mobile view in /resume page.
+Failed Attempts:
+- webkit-overflow-scrolling: touch
+- overflow-y: scroll
+- adjusting the dimensions
 
 6/19/23
 Issue: Trouble uploading seperate projects to /projects page and others (/photography, /about)
