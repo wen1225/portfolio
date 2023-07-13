@@ -1,0 +1,12 @@
+=====================
+Unopened Tickets
+=====================
+7/13/23
+Issue: Current grainy backdrop uses an image, how to use svg element to create dynamically sized backdrop that animate3 instead?
+
+7/3/23
+Issue: Resume needs to be constantly updated. How do I create a feature for self upload/update through the live site?
+
+7/6/23
+Issue: PDF needs to scale depending on the viewport of multiple mobile devices. How to achieve consistency with it?
+
