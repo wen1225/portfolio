@@ -31,9 +31,8 @@ export default function Home() {
         <>
             <Background />
             <StyledContainer>
-                <StyledEmail href="mailto:wyho1225@gmail.com">wyho1225@gmail.com</StyledEmail>
                 <StyledContent>
-                    <StyledName>WEN YAO HO</StyledName>
+                    <StyledName>KEN HO</StyledName>
                     <StyledTitle>
                         SOFTWARE DEVELOPER
                         <PushPinEmoji>📍</PushPinEmoji>
@@ -41,7 +40,7 @@ export default function Home() {
                     <StyledList>
                         <StyledListItem>
                             <StyledText onClick={() => handleClick('projects')}>PROJECTS</StyledText>
-                            <StyledDescription>Find my most recent programming content here</StyledDescription>
+                            <StyledDescription>A collection of my programing projects</StyledDescription>
                         </StyledListItem>
                         <StyledListItem>
                             <StyledText onClick={() => handleClick('resume')}>RESUME & CV</StyledText>
@@ -49,7 +48,7 @@ export default function Home() {
                         </StyledListItem>
                         <StyledListItem>
                             <StyledText onClick={() => handleClick('photography')}>PHOTOGRAPHY</StyledText>
-                            <StyledDescription>I love taking photos. I hope you'll be visually pleased!</StyledDescription>
+                            <StyledDescription>My other creative outlet</StyledDescription>
                         </StyledListItem>
                         <StyledListItem>
                             <StyledText onClick={() => handleClick('about')}>ABOUT ME</StyledText>
@@ -57,8 +56,10 @@ export default function Home() {
                         </StyledListItem>
                     </StyledList>
                 </StyledContent>
+                <StyledEmail href="mailto:wyho1225@gmail.com">wyho1225@gmail.com</StyledEmail>
             </StyledContainer>
         </>
+
     )
 }
 
@@ -81,17 +82,24 @@ function PushPinEmoji() {
 export const StyledEmail = styled.a`
     color: white;
     text-decoration: none;
-    font-family: 'LeagueSpartan-Bold';
+    font-family: 'LeagueSpartan-Regular';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 16px;
-    left: 16px;
+    padding: 2px;
+    position: relative;
+    display: grid;
+    justify-self: center;
+    align-self: end;
+
+    @media (max-width: 450px) {
+        font-size: 9px;
+    }
 `;
 
 const StyledContainer = styled.div`
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     width: 100vw;
+    min-height: 100vh;
     height: 100vh;
 
     position: relative;
@@ -104,7 +112,24 @@ const StyledContainer = styled.div`
       right: 0;
       bottom: 0;
       pointer-events: none;
-      background-image: radial-gradient(ellipse at center, transparent 95%, black 100%);
+    }
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+
+    @keyframes fadeIn {
+        0% {
+          opacity: 0;
+    }
+        100% {
+          opacity: 1;
+        }
+    }
+
+    @media (max-width: 450px) {
+        padding: 25px;
+        font-size: 12px;
+        width: 80vw;
     }
 `;
 
@@ -126,6 +151,9 @@ const StyledName = styled.h1`
     @media (max-width: 800px) {
         font-size: 40px;
     }
+    @media (max-width: 450px) {
+        font-size: 40px;
+    }
 `;
 
 const StyledTitle = styled.h2`
@@ -140,6 +168,10 @@ const StyledTitle = styled.h2`
         font-size: 15px;
         margin-bottom: 5vh;
     }
+
+    @media (max-width: 450px) {
+        font-size: 15px;
+    }
 `;
 
 const StyledList = styled.ul`
@@ -149,7 +181,7 @@ const StyledList = styled.ul`
 `;
 
 const StyledListItem = styled.li`
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 `;
 
 const StyledText = styled.span`
@@ -182,9 +214,10 @@ const StyledDescription = styled.p`
     color: #f1f3f5;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
+    padding-top: 5px;
     @media (max-width: 800px) {
         font-size: 12px;
+        padding-top: 2px;
       }
 `;
 
