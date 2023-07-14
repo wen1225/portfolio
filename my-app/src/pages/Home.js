@@ -86,9 +86,6 @@ export const StyledEmail = styled.a`
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 2px;
     position: relative;
-    display: grid;
-    justify-self: center;
-    align-self: end;
 
     @media (max-width: 450px) {
         font-size: 9px;
@@ -150,9 +147,11 @@ const StyledName = styled.h1`
 
     @media (max-width: 800px) {
         font-size: 40px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
     @media (max-width: 450px) {
         font-size: 40px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 `;
 
