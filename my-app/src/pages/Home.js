@@ -66,8 +66,7 @@ export default function Home() {
 function PushPinEmoji() {
 
     const ResponsiveEmoji = styled.div`
-        fontSize: 20px;
-        marginTop: 10px;
+        marginTop: 15px;
 
         @media (max-width: 1000px) {
             fontSize: 10px;
@@ -157,7 +156,7 @@ const StyledName = styled.h1`
 
 const StyledTitle = styled.h2`
     font-size: 30px;
-    margin-bottom: 15vh;
+    margin-bottom: 12vh;
     color: #f1f3f5;
     letter-spacing: 5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -166,10 +165,14 @@ const StyledTitle = styled.h2`
     @media (max-width: 800px) {
         font-size: 15px;
         margin-bottom: 5vh;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
     }
 
     @media (max-width: 450px) {
         font-size: 15px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
     }
 `;
 
@@ -215,7 +218,7 @@ const StyledDescription = styled.p`
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding-top: 5px;
     @media (max-width: 800px) {
-        font-size: 12px;
+        font-size: 13px;
         padding-top: 2px;
       }
 `;
