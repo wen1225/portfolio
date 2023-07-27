@@ -1,8 +1,11 @@
 =====================
 Unopened Tickets
 =====================
+7/14/23
+Issue: Clunky fade in animation when user tries to navigate to a previous page. Especially in mobile.
 
-
+7/14/23
+Issue: Email address not centered when in mobile view
 
 =====================
 Pending Tickets
