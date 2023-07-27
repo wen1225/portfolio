@@ -29,33 +29,32 @@ export default function Home() {
 
     return (
         <>
-            <Background />
             <StyledContainer>
-                <StyledContent>
-                    <StyledName>KEN HO</StyledName>
-                    <StyledTitle>
-                        SOFTWARE DEVELOPER
-                        <PushPinEmoji>📍</PushPinEmoji>
-                    </StyledTitle>
-                    <StyledList>
-                        <StyledListItem>
-                            <StyledText onClick={() => handleClick('projects')}>PROJECTS</StyledText>
-                            <StyledDescription>A collection of my programing projects</StyledDescription>
-                        </StyledListItem>
-                        <StyledListItem>
-                            <StyledText onClick={() => handleClick('resume')}>RESUME & CV</StyledText>
-                            <StyledDescription>My most recent resume and CV can be found here</StyledDescription>
-                        </StyledListItem>
-                        <StyledListItem>
-                            <StyledText onClick={() => handleClick('photography')}>PHOTOGRAPHY</StyledText>
-                            <StyledDescription>My other creative outlet</StyledDescription>
-                        </StyledListItem>
-                        <StyledListItem>
-                            <StyledText onClick={() => handleClick('about')}>ABOUT ME</StyledText>
-                            <StyledDescription>Getting a bit personal aren't we</StyledDescription>
-                        </StyledListItem>
-                    </StyledList>
-                </StyledContent>
+                <Background />
+                <StyledList>
+                        <StyledName>KEN HO</StyledName>
+                    <StyledListItem>
+                        <StyledTitle>
+                            Software Engineer based in San Jose, CA
+                        </StyledTitle>
+                    </StyledListItem>
+                    <StyledListItem>
+                        <StyledText onClick={() => handleClick('projects')}>PROJECTS</StyledText>
+                        <StyledDescription>A collection of my programing projects</StyledDescription>
+                    </StyledListItem>
+                    <StyledListItem>
+                        <StyledText onClick={() => handleClick('resume')}>RESUME & CV</StyledText>
+                        <StyledDescription>My most recent resume and CV can be found here</StyledDescription>
+                    </StyledListItem>
+                    <StyledListItem>
+                        <StyledText onClick={() => handleClick('photography')}>PHOTOGRAPHY</StyledText>
+                        <StyledDescription>My other creative outlet</StyledDescription>
+                    </StyledListItem>
+                    <StyledListItem>
+                        <StyledText onClick={() => handleClick('about')}>ABOUT ME</StyledText>
+                        <StyledDescription>Getting a bit personal aren't we</StyledDescription>
+                    </StyledListItem>
+                </StyledList>
                 <StyledEmail href="mailto:wyho1225@gmail.com">wyho1225@gmail.com</StyledEmail>
             </StyledContainer>
         </>
@@ -63,28 +62,21 @@ export default function Home() {
     )
 }
 
-function PushPinEmoji() {
-
-    const ResponsiveEmoji = styled.div`
-        marginTop: 15px;
-
-        @media (max-width: 1000px) {
-            fontSize: 10px;
-        }
-    `;
-
-    return (
-        <ResponsiveEmoji>📍 San Jose, CA</ResponsiveEmoji>
-    )
-}
-
 export const StyledEmail = styled.a`
     color: white;
     text-decoration: none;
-    font-family: 'LeagueSpartan-Regular';
+    font-family: 'LeagueSpartan-Medium';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
     padding: 2px;
-    position: relative;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: 800px) {
+        font-size: 12px;
+      }
 
     @media (max-width: 450px) {
         font-size: 9px;
@@ -92,13 +84,15 @@ export const StyledEmail = styled.a`
 `;
 
 const StyledContainer = styled.div`
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     min-height: 100vh;
     height: 100vh;
-
-    position: relative;
+    font-family: 'LeagueSpartan-Bold';
+    text-align: center;
 
     &::before {
       content: "";
@@ -129,50 +123,40 @@ const StyledContainer = styled.div`
     }
 `;
 
-const StyledContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    font-family: 'LeagueSpartan-Bold';
-`;
-
 const StyledName = styled.h1`
     font-size: 80px;
     margin-top: 15vh;
     color: #f1f3f5;
-    letter-spacing: 15px;
+    letter-spacing: 3px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-
     @media (max-width: 800px) {
-        font-size: 40px;
+        font-size: 50px;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
     @media (max-width: 450px) {
-        font-size: 40px;
+        font-size: 50px;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 `;
 
 const StyledTitle = styled.h2`
-    font-size: 30px;
+    position: relative;
+    font-size: 16px;
+    font-family: 'LeagueSpartan-Regular';
     margin-bottom: 12vh;
     color: #f1f3f5;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 
     @media (max-width: 800px) {
-        font-size: 15px;
+        font-size: 13px;
         margin-bottom: 5vh;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
     }
 
     @media (max-width: 450px) {
-        font-size: 15px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
+        font-size: 13px;
     }
 `;
 
@@ -180,6 +164,7 @@ const StyledList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+
 `;
 
 const StyledListItem = styled.li`
@@ -188,28 +173,24 @@ const StyledListItem = styled.li`
 
 const StyledText = styled.span`
   margin-bottom: 6vh;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   color: #f1f3f5;
-  letter-spacing: 15px;
+  letter-spacing: 12px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
+  position: relative;
 
   &:hover {
-    opacity: 0.8;
+    color: #ffcc00;
   }
-
-  &.blur {
-    opacity: 0.5;
-    filter: blur(4px);
-  }
-
   @media (max-width: 800px) {
     margin: 5vh 5vh 5vh 0;
     font-size: 16px;
     letter-spacing: 5px;
   }
 `;
+
+
 
 const StyledDescription = styled.p`
     font-family: 'LeagueSpartan-Medium';
@@ -222,52 +203,3 @@ const StyledDescription = styled.p`
         padding-top: 2px;
       }
 `;
-
-//This is the top right circle
-/*const StyledCircleTop = styled.div`
-  width: 300px;
-  height: 300px;
-  border-radius: 0 0 0 100%;
-  background-color: #082392;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-
-  
-  opacity: 0.8;
-  filter: blur(4px);
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
-
-  @media (max-width: 800px) {
-    width: 200px;
-    height: 200px;
-  }
-
-  @media (max-width: 400px) {
-    width: 80px;
-    height: 70px;
-  }
-
-`;
-
-//This is the bottom left circle
-const StyledCircleBottom = styled.div`
-width: 350px;
-height: 200px;
-border-radius: 0 100% 0 0;
-background-color: #f9cc01;
-position: absolute;
-bottom: 0px;
-left: 0px;
-
-@media (max-width: 1000px) {
-  width: 120px;
-  height: 100px;
-}
-
-@media (max-width: 400px) {
-  width: 60px;
-  height: 50px;
-}
-`;
-*/
