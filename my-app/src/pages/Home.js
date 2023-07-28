@@ -52,7 +52,7 @@ export default function Home() {
                     </StyledListItem>
                     <StyledListItem>
                         <StyledText onClick={() => handleClick('about')}>ABOUT ME</StyledText>
-                        <StyledDescription>Getting a bit personal aren't we</StyledDescription>
+                        <StyledDescription>Getting a bit personal, aren't we</StyledDescription>
                     </StyledListItem>
                 </StyledList>
                 <StyledEmail href="mailto:wyho1225@gmail.com">wyho1225@gmail.com</StyledEmail>
@@ -84,10 +84,9 @@ export const StyledEmail = styled.a`
 `;
 
 const StyledContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns 1fr: 
+    justify-items: center;
     width: 100vw;
     min-height: 100vh;
     height: 100vh;
@@ -116,26 +115,21 @@ const StyledContainer = styled.div`
         }
     }
 
-    @media (max-width: 450px) {
-        padding: 25px;
-        font-size: 12px;
-        width: 80vw;
-    }
 `;
 
 const StyledName = styled.h1`
     font-size: 80px;
     margin-top: 15vh;
     color: #f1f3f5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
         font-size: 50px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
     }
     @media (max-width: 450px) {
         font-size: 50px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
     }
 `;
 
@@ -176,13 +170,11 @@ const StyledText = styled.span`
   color: #f1f3f5;
   letter-spacing: 12px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  position: relative;
 
   &:hover {
     color: #ffcc00;
   }
   @media (max-width: 800px) {
-    margin: 5vh 5vh 5vh 0;
     font-size: 16px;
     letter-spacing: 5px;
   }
