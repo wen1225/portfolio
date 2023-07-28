@@ -29,8 +29,8 @@ export default function Home() {
 
     return (
         <>
+        <Background />
             <StyledContainer>
-                <Background />
                 <StyledList>
                         <StyledName>KEN HO</StyledName>
                     <StyledListItem>
@@ -127,7 +127,6 @@ const StyledName = styled.h1`
     font-size: 80px;
     margin-top: 15vh;
     color: #f1f3f5;
-    letter-spacing: 3px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
@@ -141,12 +140,11 @@ const StyledName = styled.h1`
 `;
 
 const StyledTitle = styled.h2`
-    position: relative;
     font-size: 16px;
     font-family: 'LeagueSpartan-Regular';
     margin-bottom: 12vh;
     color: #f1f3f5;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 
