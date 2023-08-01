@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cfc1ca41.css",
-    "main.js": "/static/js/main.2d3754f0.js",
+    "main.js": "/static/js/main.9077bfaf.js",
     "static/media/backdrop.png": "/static/media/backdrop.79f6977a4d62d2f4b376.png",
     "static/media/resume_and_cv.pdf": "/static/media/resume_and_cv.6733eeb90ed123d8752e.pdf",
     "static/media/AnonymousPro-Bold.ttf": "/static/media/AnonymousPro-Bold.a722102835c269d44886.ttf",
@@ -11,10 +11,10 @@
     "static/media/LeagueSpartan-Regular.ttf": "/static/media/LeagueSpartan-Regular.09958bb07a94a6a4f1bb.ttf",
     "index.html": "/index.html",
     "main.cfc1ca41.css.map": "/static/css/main.cfc1ca41.css.map",
-    "main.2d3754f0.js.map": "/static/js/main.2d3754f0.js.map"
+    "main.9077bfaf.js.map": "/static/js/main.9077bfaf.js.map"
   },
   "entrypoints": [
     "static/css/main.cfc1ca41.css",
-    "static/js/main.2d3754f0.js"
+    "static/js/main.9077bfaf.js"
   ]
 }
